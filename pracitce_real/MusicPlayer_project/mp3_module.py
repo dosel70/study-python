@@ -91,7 +91,12 @@ class MusicPlayer :
                 break
         else :
             print_song_not_found(title)
+
     def show_songs(self):
-         print(self.song_list)
+        return self.song_list
+
+
+
+
 
 

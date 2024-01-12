@@ -1,0 +1,7 @@
+add > commit > master > merge > push >
+git(add . > commit -m " " >  merge > push origin master)
+git init > git add. > git commit -m " " > git merge .. (master 내에서)  > git push origin master
+
+git init > git status > git add. > git commit -m " " >
+git remote add origin github 링크 > git reomte -v (확인) >
+git push origin master

@@ -5,6 +5,7 @@ from message_module import display_menu
 
 if __name__ == '__main__':
     player = MusicPlayer()
+
     #MusicPlayer 클래스 기능을 담은 player 객체
 
     while True :
@@ -31,8 +32,9 @@ if __name__ == '__main__':
             player.delete_song(title)
 
         elif choice == '6':
-            player.show_songs()
-            continue
+           for title , artist in player.song_list :
+               print(f'{title} - {artist}')
+
 
         elif choice == '7': # 프로그램 종료
             print("프로그램 종료")

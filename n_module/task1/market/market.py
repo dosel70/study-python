@@ -1,6 +1,6 @@
 from message_module import *
 from market_module import *
-from n_module.task1.bank.bank_module import *
+
 
 if __name__ == '__main__':
     while True:
