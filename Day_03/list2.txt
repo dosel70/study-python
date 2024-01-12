@@ -1,0 +1,105 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 30 14:20:46 2023
+
+@author: user
+"""
+
+# subway = [10,20,30]
+
+# subway = ["리신","이즈리얼",505,506]
+# print(subway.index("이즈리얼"))
+# print(subway.append("라이즈"))
+# print(subway)
+
+# subway.insert(0,"티모")
+# '''
+# print(subway.pop())
+# print(subway)
+# print(subway.pop())
+# print(subway)
+# print(subway.pop())
+# print(subway)
+
+# '''
+
+# print(subway.count(505)) # 몇번들어갔는지 확인
+
+# num_list = [5,2,4,3,1]
+# num_list.sort() # 정렬
+# print(num_list)
+
+# kist = [1,2,3,4,5]
+# kist.reverse() # 뒤집기
+# print(kist)
+
+# # num_list.clear() # 모두 지우기
+
+
+# # 리스트 확장
+# num_list.extend(kist)
+# print(num_list)
+# total_scores = 0
+# scores = []
+# for i in range(10) :
+#     value = int(input("성적을 입력하세요 : "))
+#     scores.append(value)
+#     total_scores += value
+# avg = total_scores / 10
+
+# highscores = 0
+# for i in range(len(scores)) :
+#     if scores[i] >= 80 :
+#         highscores += 1
+# print(f'성적 평균은 {avg}점 입니다. ')
+# print(f'80점 이상 학생은 {highscores}명 입니다.')
+
+# puppy = []
+# total_puppy = " "
+# while True:
+#     name = input("강아지의 이름을 입력하시오(종료시에는 엔터키) : ")
+#     if name == '' :
+#         break
+#     puppy.append(name)
+#     total_puppy += name
+
+# print(f'강아지들의 이름 :')
+# for name in puppy:
+#     print(name,end=', ')
+
+first = ["a","b","c","d","e"]
+print(first[0], first[1], first[-1])
+jack = ['welcome!'] * 3
+print(jack)
+for x in [1,2,3]: print(x)
+# print(first[2:4]) # 슬라이싱
+# print(first[3])
+# print(len(first))
+squares = [0,1,2,3,4,5,6,7,8,9]
+squares[7] = 49
+print(squares)
+squares[2:7] = ["a","b","c","d","e"]
+print(squares)
+
+for x in [1,2,3] : print(x)
+
+# for squares in ["안녕하세요"] : squares
+# print(squares)
+# squares.insert(1,"하이")
+# print(squares)
+
+# 얕은 복사 shallow copy (리스트는 실질적으로 복사 x)
+# scores = [1,2,3,4,5,6]
+# values = scores
+# scores[2] = 99
+
+# for scores[2] in scores :
+#     print(scores,end='')
+
+# 깊은 복사
+level = [100,200,300,400,600,900]
+value = list(level)
+value[5] = 9900
+print(value)
+print(level)
+

@@ -1,0 +1,54 @@
+list
+    여러개의 저장공간이 나열되어 있는 것.
+
+    사용 목적
+    1. 여러 번 선언하지 않고 한 번만 선언하기 위해서 사용
+    2. 규칙성 없는 값에 규칙성을 부여하기 위해서 사용
+
+ list 선언
+    - 어떤 값을 넣을 지 알때
+        list 명 = [값1,값2]...
+    - 어떤  값인지는 모르지만 칸 수는 알때
+        list명 = [값] * 칸 수
+    - 어떤 값인지도 모르고 칸 수도 모를 때
+        list명 = []
+
+    list명 = list(range(start,end,step))
+
+ list 길이
+    len(list명)
+ list 사용
+    data_list = [1,2,3]
+    - 값 넣기
+    (추가)
+        data_list.append(값) >> 뒤에 추가됨
+        data_list.append(4) >> [1,2,3,4]
+    (삽입)
+        data_list.insert(인덱스 번호,값)
+        data_list.insert(0,5.5) >> [5.5,1,2,3,4,5]
+    (삭제)
+       data_list.remove(값)
+       del(data_list[인덱스 번호])
+       del data_list[인덱스 번호]
+
+       data_list.clear() >> 모두 삭제
+    - 값 검색
+        list = [1,2,3,3,4,5]
+        list.index(3)
+        print(list.index(3)) >> 2
+        값이 들어 있는 저장공간의 인덱스 번호
+        중복 시 먼저 나온 값의 인덱스 번호
+    - 값 수정
+        list[2] = 새로운 값
+
+# subway = ["리신","이즈리얼",505,506]
+# print(subway.index("이즈리얼"))
+# subway[3] = "안녕"
+
+
+
+
+
+
+
+

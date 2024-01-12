@@ -1,0 +1,59 @@
+# -*- coding: utf-8 -*-
+"""
+함수는 특정 작업을 수행하는 명령어들의 모음에 이름을 붙인 것
+함수의 장점 : 1. 프로그램 안에서 중복된 코드를 제거
+2. 복잡한 프로그래밍 작업을 더 간단한 작업들로 분해할 수 있다. 각 함수들은 레고의 블록 처럼 다른 함수들과 연결되어서
+하나의 프로그램을 구성한다. 3. 함수는 한번 만들어지면 다른 프로그램에서도 재사용 될 수 있다.
+4. 함수를 사용하면 가독성이 증대되고, 유저 관리도 쉬워진다.
+"""
+
+
+# name = "철수"
+# msg = "어서 집에 오너라"
+# def say_hello(name,msg):
+#     print("안녕",name,"야, " ,msg)
+# print(say_hello(name, msg))
+
+
+# def get_sum(start,end) :
+#     sum = 0
+#     for i in range(start,end+1):
+#         sum+=i
+#     return sum
+# print(get_sum(1, 20))
+# print(get_sum(1, 100))
+
+# def square(n):
+#     return n*n
+# print(square(5))
+
+
+# def power(x,y) :
+#     result = 1
+#     for i in range(y):
+#         result = result * x
+#     return result
+# print(power(10, 2))
+
+# x =int(input("정수 입력 : "))
+# def fac(x):
+#     digit = 1
+#     while x > 0 : # x가 0이 되야 반복문 종료 >> x // 10 == 0
+#         digit = digit * x
+#         x -= 1
+
+#     return digit
+# value = fac(x)
+# print(value)
+
+
+celebration = "\n생일 축하 합니다!"
+celefriend = "\n사랑하는 친구의 생일축하 합니다!"
+
+def birthday(celebration):
+    result = ""  # 결과 문자열을 초기화
+    for i in range(2):
+        result += celebration  # 결과 문자열에 celebration을 추가
+    return result
+
+print(birthday(celebration), celefriend)

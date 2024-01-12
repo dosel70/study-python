@@ -1,0 +1,57 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jan  1 16:34:24 2024
+
+@author: user
+"""
+
+# 친구 리스트 설정 (친구 추가를 통해 계속 업데이트)
+choice = 0
+addList = []
+while choice != 5 :
+    print("----------------------------")
+    num1 = "\n1. 친구 리스트 출력"
+    num2 = "\n2. 친구추가"
+    num3 = "\n3. 친구 삭제"
+    num4 = "\n4. 이름 변경"
+    num5 = "\n5. 종료"
+    print(num1,num2,num3,num4,num5)
+    choice = int(input("원하는 메뉴의 버튼을 클릭하세요 : "))
+    print("----------------------------")
+
+
+    if choice == 1 :
+        print(addList)
+
+    elif choice == 2:
+        while True :
+            name = input("친구 추가 (엔터키 누르면 종료): ")
+            if name == '':
+                break
+            addList.append(name) # 친구 리스트에 친구 이름들을 계속 추가
+
+
+    elif choice == 3:
+        while True :
+            del_name = input("삭제할 친구 이름 (엔터키 누르면 종료): ")
+            if del_name == '':
+                break
+            addList.remove(del_name)
+
+    elif choice == 4:
+        while True :
+            old_name = input("변경하고 싶은 이름을 입력하시오 (엔터키 누르면 종료): ")
+            if old_name == '':
+                break
+            if old_name in addList:
+                index = addList.index(old_name)
+                new_name = input("새로운 이름을 입력 : ")
+                addList[index] = new_name
+            else :
+                print("이름 없음")
+    elif choice == 5:
+        print("프로그램을 종료합니다.")
+        break
+    else :
+        print("정확한 번호를 입력해주세요")
+        continue
