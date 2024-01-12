@@ -31,7 +31,7 @@ class MusicPlayer :
     # 값을 전달받을 수 있다. (굳이 상속을 쓸 필요 x, add_song 메서드 내에서 충분히 활용을 할 수 있고 불필요한
     # 의존성을 줄여주니깐)
     def add_song(self, title, artist, file_path):
-        try : # 혹시 몰라서 예외 처리를 해두었다.
+        try : # 에러가능성이 있는 곳은 예외 처리를 해두었다.
             song = Song(title, artist, file_path)
             self.song_list.append(song)
             print_song_added(song)
