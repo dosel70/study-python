@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CalenderActivity">
+
+    <CalendarView
+        android:layout_marginTop="16dp"
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editTextEvent"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="운동 또는 식단을 입력하세요" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저장"
+        android:background="@drawable/social_btn"
+        android:id="@+id/buttonSave"
+        android:layout_marginTop="16dp"
+        />
+
+    <EditText
+        android:id="@+id/textViewSavedEvent"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="선택한 날짜"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/lv_exercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp" />
+</LinearLayout>

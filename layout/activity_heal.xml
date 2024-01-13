@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#BC1818"
+        android:textAlignment="textEnd"
+        app:title="Nutri Care   -  웨이트트레이닝 강의영상"
+        app:titleTextColor="@color/white"
+        android:gravity="end"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dp"
+                android:layout_marginTop="15.0dp"
+                android:background="@drawable/backgroundcrop"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:onClick="beforeage18"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150.0dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:padding="5.0dp"
+                            android:text="가슴 , 삼두운동"
+                            android:textColor="#ff000000"
+                            android:textSize="20.0dp"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:padding="5.0dp"
+                            android:text="2분할 운동"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5.0dp"
+                            android:text="매 1분씩 휴식"
+                            android:textColor="#ffff5722"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+
+
+                        >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bench"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.0"
+                        >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:src="@drawable/baseline_keyboard_arrow_right_24"/>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_chest"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:background="@drawable/btn1"
+                    android:text="유튜브 강의영상 보기"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:onClick="afterage18"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150.0dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:padding="5.0dp"
+                            android:text="등 , 이두 운동"
+                            android:textColor="#ff000000"
+                            android:textSize="20.0dp"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:padding="5.0dp"
+                            android:text="2분할 운동"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5.0dp"
+                            android:text="매 1분씩 휴식"
+                            android:textColor="#ffff5722"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+
+
+                        >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/dead"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.0"
+                        >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:src="@drawable/baseline_keyboard_arrow_right_24"/>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:background="@drawable/btn1"
+                    android:text="유튜브 강의영상 보기"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textAllCaps="true"/>
+
+
+                <LinearLayout
+                    android:onClick="otherexercise"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:contentDescription="다른 운동 찾기"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/backgroundcrop"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="150.0dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:padding="5.0dp"
+                                android:text="하체 , 어깨 운동"
+                                android:textColor="#ff000000"
+                                android:textSize="20.0dp"
+                                android:textStyle="bold"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="serif"
+                                android:padding="5.0dp"
+                                android:text="2분할 운동"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5.0dp"
+                                android:text="매 1.5분씩 휴식"
+                                android:textColor="#ffff5722"
+                                android:textStyle="bold" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/squat1"
+                                />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.0" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:src="@drawable/baseline_keyboard_arrow_right_24"
+
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_leg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10.0dp"
+                        android:background="@drawable/btn1"
+                        android:text="유튜브 강의영상 보기"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textAllCaps="true"/>
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:onClick="fooda"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:contentDescription="추천 식단 및 체중분석"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/backgroundcrop"
+                    android:orientation="vertical"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

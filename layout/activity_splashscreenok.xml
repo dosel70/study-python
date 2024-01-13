@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashscreenok"
+    android:background="@drawable/splash">
+
+    <ImageView
+        android:id="@+id/appsplash"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:src="@drawable/nature_icon"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:id="@+id/appname"
+        android:text="Nutri Care"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        android:textColor="#95ED97"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:id="@+id/appname1"
+        android:text="뉴트리케어 - 건강지킴이"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FDFDFD"/>
+
+</RelativeLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/background_bottom_menu"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/nutri" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="프로필 설정"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:contentDescription="스크롤뷰">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical" >
+
+           <ImageView
+               android:id="@+id/profile"
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:layout_marginTop="10dp"
+               android:layout_gravity="center"
+               android:src="@drawable/profilez"/>
+           <TextView
+               android:id="@+id/tv_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginTop="10dp"
+               tools:text="조성현"
+               android:textStyle="bold"
+               android:textSize="22dp"
+               android:textColor="@color/PrimaryDark"/>
+
+           <TextView
+               android:id="@+id/tv_email"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               tools:text="jo@naver.com"
+               android:textColor="@color/black"
+               android:textSize="18dp" />
+
+           <androidx.appcompat.widget.AppCompatButton
+               android:id="@+id/btn_photo"
+               android:layout_width="wrap_content"
+               android:layout_height="48dp"
+               android:layout_gravity="center"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/btn"
+               android:text="프로필 이미지 삽입"
+               android:textAllCaps="false"
+               android:textColor="#0E1745"
+               android:textSize="18dp"
+               android:textStyle="bold" />
+
+           <LinearLayout
+               android:background="@drawable/background_search"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               android:layout_marginTop="40dp"
+               android:orientation="vertical"
+               android:padding="15dp">
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:src="@drawable/baseline_phone_enabled_24"
+                       android:padding="5dp"/>
+
+                   <EditText
+                       android:id="@+id/phone"
+                       android:layout_width="wrap_content"
+                       android:layout_height="48dp"
+                       android:layout_centerVertical="true"
+                       android:layout_marginStart="50dp"
+                       android:hint="휴대폰 번호를 입력하세요."
+                       android:inputType="phone"/>
+
+
+               </RelativeLayout>
+
+           </LinearLayout>
+           <LinearLayout
+               android:background="@drawable/background_search"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               android:layout_marginTop="40dp"
+               android:orientation="vertical"
+               android:padding="15dp">
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:src="@drawable/baseline_add_home_24"
+                       android:padding="5dp"/>
+
+                   <EditText
+                       android:id="@+id/home"
+                       android:layout_width="wrap_content"
+                       android:layout_height="48dp"
+                       android:layout_centerVertical="true"
+                       android:layout_marginStart="50dp"
+                       android:hint="주소를 입력하세요."
+                       android:inputType="text"/>
+
+
+               </RelativeLayout>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:background="@drawable/background_search"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               android:layout_marginTop="40dp"
+               android:orientation="vertical"
+               android:padding="15dp">
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:src="@drawable/baseline_done_24"
+                       android:padding="5dp"/>
+
+                   <EditText
+                       android:id="@+id/agree1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="48dp"
+                       android:layout_centerVertical="true"
+                       android:layout_marginStart="50dp"
+                       android:maxLines="1"
+                       android:singleLine="true"
+                       android:maxLength="3"
+                       android:hint="나이를 입력하세요"
+                       android:textSize="18dp"
+                       android:inputType="number"
+                       android:gravity="center"/>
+
+               </RelativeLayout>
+
+
+
+
+
+           </LinearLayout>
+           <androidx.appcompat.widget.AppCompatButton
+               android:id="@+id/btn_complete"
+               android:layout_width="wrap_content"
+               android:layout_height="48dp"
+               android:layout_gravity="center"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/button_bg"
+               android:text="정보 저장"
+               android:textAllCaps="false"
+               android:textColor="#0E1745"
+               android:textSize="18dp"
+               android:textStyle="bold" />
+
+
+
+       </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>

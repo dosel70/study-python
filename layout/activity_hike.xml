@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            >
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/hiking"/>
+
+            <Button
+                android:layout_marginTop="35dp"
+                android:id="@+id/time"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:text="60:00"
+                android:textSize="28dp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:background="@drawable/button_bg_round"
+                />
+
+            <Button
+                android:id="@+id/startbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_bg"
+                android:text="START"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginEnd="55dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="50dp"
+                android:text="운동 방법"
+                android:layout_gravity="center"
+                android:textColor="#686060"
+                android:textSize="25sp"
+                android:padding="7dp"
+                android:textStyle="bold"
+                android:background="@drawable/button_ji"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ECEDE8"
+                        android:text="등산의 장점:
+체력 운동:
+등산은 신체를 활발하게 움직이며, 특히 다양한 경사와 지형에서의 오르내림은 다양한 근육을 사용하여 전신 운동으로 작용합니다. 이는 전반적인 체력 강화와 유지에 도움이 됩니다.
+
+자연과의 소통:
+등산은 주로 자연환경에서 이루어지기 때문에 자연과의 소통과 함께 휴식을 취하는 좋은 방법입니다. 신선한 공기, 자연의 소리, 그리고 아름다운 풍경은 등산을 통해 경험할 수 있는 즐거움 중 하나입니다.
+
+스트레스 해소:
+자연 속에서의 활동은 스트레스를 해소하는 데 효과적입니다. 등산은 일상의 스트레스와 피로를 떨쳐내고 명상적인 경험을 제공합니다."
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</com.google.android.material.circularreveal.CircularRevealFrameLayout>
